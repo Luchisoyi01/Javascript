@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document object model(DOM)</title>
+  <style></style>
+</head>
+<body>
+  <button>Hello</button>
+  <button class="second">second button</button>
+  <script>
+    console.log(document.querySelector('button').innerHTML);
+    document.querySelector('button').innerHTML = 'Good job';
+    const buttonElement = document.querySelector('.second');
+    console.log(buttonElement);
+    /*console.log(document.title);
+    console.log(document.body);
+    console.log(document.body.innerHTML);
+
+    document.body.innerHTML='hello';
+    document.title = 'Watson';
+    document.button = 'world';
+    method is a function saved inside an object*/
+
+  </script>
+</body>
+</html>
