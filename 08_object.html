@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+  <style></style>
+</head>
+<body>
+  <script>
+    /*const product = {
+      name:'socks',
+      brand: 'GUCCI',
+      price: 1090
+    };
+    console.log(product);
+    product.name = 'T-shirt'
+    console.log(product.name);
+    console.log(product);*/
+    /*objects makes our code more organized, allows us to use multiple values together
+    
+    const product2 ={
+      name: 'Shirt',
+      'delivery-time': '1 day',
+      rating: {
+        stars: 4.5,
+        count: 87
+      },
+      fun: function function1(){
+        console.log('Function inside an object');
+      }
+    };
+    //object + function = Method eg math.random(), console.log()
+    console.log(product2);
+    console.log(product2.rating);
+    console.log(product2['delivery-time']);
+    console.log(product2.rating.count);
+    product2.fun();*/
+
+    console.log('Hello'.length);
+    console.log('Hello'.toLowerCase());
+    console.log('Hello'.toUpperCase());
+    const object1 = {
+      message: 'Hello',
+    };
+    const object2 = object1;
+    object1.message ='Good job baby';
+    console.log(object2);
+    const object3 ={
+      message: 'Good job baby',
+    }
+    console.log(object3===object2);
+    console.log(object1===object2);
+
+    const object4 ={
+      message: 'Good job baby',
+      Price: 677
+    }
+    //const message = object4.message;
+    // method of destructing is shown below which is the same as the above code
+    const { message, Price } = object4;
+    console.log(message);
+    console.log(Price);
+
+    //shorthand property
+    const object5 ={
+      //message: message,
+      message
+    };
+    console.log(object5);
+  </script>
+</body>
+</html>
