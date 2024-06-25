@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array and loops</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script>
+    /*
+    let myArray = [10, 20, 30, 40];
+    console.log(myArray);     
+    myArray[2]= 40; 
+    console.log(myArray);
+    console.log(myArray.length);
+    /*myArray.pop(10); //it removes the last element in an array
+    console.log(myArray);
+    myArray.push(100); // it adds an element to an array 
+    console.log(myArray);
+    myArray.splice(0, 1); // it removes the the number at the first index in an array and has two values one pointing the index and the the number to be removed
+    console.log(myArray);
+    document.getElementById("demo").innerHTML = myArray[0];
+    document.getElementById("dem").innerHTML = myArray.length;
+    /*let name = ['watson', 'luchisoyi', 'john'];
+    console.log(name);
+    typeof (name);*/
+    /*
+    let i = 1;
+    while (i<=5){      
+      console.log(i);
+      i ++;
+    }
+    for(let k = 1; k<=10; k++){
+     console.log(k);
+    }
+    let randomNumber = 0;
+    while(randomNumber < 0.5){
+      randomNumber= Math.random();
+    }
+    console.log(randomNumber);
+   */
+   /* 
+   const todoList =[
+      'wash cloth',
+      'make dinner',
+      'watch Youtube',
+      'read a book'
+    ]
+    for( let index = 0; index <= todoList.length - 1; index++){
+      const value = todoList[index];
+      console.log(value);
+    }
+    */
+    /*
+    for(let k = 0; k<=10; k++){
+      console.log('hello world');
+    }
+    
+    //the accumulator pattern
+    const numbs = [1, 2, 3, 4];
+    let total = 0; //accumulator variable
+    for(let i = 0; i < numbs.length; i++){
+      const numb = numbs[i];
+      total +=numb;
+    }
+    console.log(total);
+
+    const numsDoubled = [];
+    for(let i = 0; i < numbs.length; i++){
+      const numb = numbs[i];
+      numsDoubled.push(numb*2);
+    }
+    console.log(numsDoubled);
+    */
+    const array1 = [1, 2, 3];
+    const array2 = array1.slice();
+    array2.push(4);
+    console.log(array1);
+    console.log(array2);
+
+    for(let i= 0; i<=10; i++){
+      if(i===3){ //it skips the number in the condition
+        continue;
+      }
+      console.log(i);
+      if(i===8){
+        break; //break makes the loop to end when the condition is meet
+      }
+    }
+
+    let k = 1;
+    while(k<=10){
+      if(k%3 === 0){
+        k++;
+        continue;
+      }
+      console.log(k);
+      k++;
+    }
+
+    function doubleArray(numbs){
+      const numsDoubled = [];
+      for(let i = 0; i < numbs.length; i++){
+        const numb = numbs[i];
+        if (numbs === 0){
+          return numsDoubled;
+        }
+        numsDoubled.push(numb*2);
+      }
+      return numsDoubled;
+    }
+    console.log(doubleArray([1, 2, 3]));
+    console.log(doubleArray([6, 8, 9, 0, 12]));
+  </script>
+</body>
+</html>
