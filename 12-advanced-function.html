@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Functions</title>
+</head>
+<body>
+  <!--<div onmouseover="this.style.backgroundColor='red'">myDIV.</div>-->
+  <button class="js-button" >Click</button>
+  <script>
+    /*
+    const buttonElement = document.querySelector('.js-button');
+
+    const event = () =>{
+      console.log('click');
+    };
+    buttonElement.addEventListener('click', event);
+
+    buttonElement.removeEventListener('click', event);
+
+    buttonElement.addEventListener('click', () =>{
+      console.log('click2');
+    });
+     buttonElement.addEventListener('keydown', (event)=>{
+      //console.log(event.key);
+      if(event.key === 'r'){
+        console.log('you have pressed R')
+      }else if (event.key ==='q'){
+        console.log('you have pressed Q')
+      }else if (event.key ==='w'){
+        console.log('you have pressed w')}
+     });
+     */
+    /*
+    //a code to convert celsius to fahrenheit
+    function toCelsius(fahrenheit) {
+      return (5/9) * (fahrenheit-32);
+    }    
+    let value = toCelsius(77);
+    console.log(value);
+    
+    const object1 = {
+      numb: 2,
+      fun: function(){
+        console.log('hello world');
+      }
+    };
+    object1.fun();
+
+    function display (param){
+      console.log(param);
+    }
+    display(2);
+
+    setTimeout(function(){
+      console.log('time out');
+    }, 4000)
+
+    // setInterval it keeps on running the funtion after a certain period of time in the future
+    setInterval(function(){
+      console.log('watson loves kenya');
+    }, 2000)
+
+    
+    [
+      'Make dinner',
+      'Watch youtube',
+      'Wash cloth',
+      'Go home' 
+      // forEach function is the preffered way to loop through an array.
+    ].forEach(function(value, index){
+      if( value === 'Wash cloth'){
+        return;
+      }
+      console.log(index);
+      console.log(value);
+    })
+
+    [
+    'Make dinner',
+    'Watch youtube',
+    'Wash cloth'
+    // forEach function is the preffered way to loop through an array.
+    ].forEach((value, index) =>{
+    if( value === 'Wash cloth'){
+      return;
+    }
+    console.log(index);
+    console.log(value);
+   })
+
+    const arrowFunction = () => {
+      console.log('Hello')
+    };
+    arrowFunction();
+    */
+    console.log([1, -2, 3, 4].filter((value, index) => {
+      /*if(value >=  0){
+        return true;
+      }else{
+        return false;
+      }*/
+      return value >= 0;
+    }));
+
+    // .map() transforms an array into another array
+    console.log([2, 2, 3, 4].map((value, index) =>{
+      return value*value;
+    }));
+
+    console.log([2, 2, 3, 4].map((value, index) =>{
+      return value*2;
+    }));
+
+    console.log([2, 2, 3, 4].map(value => value*3));
+  </script>
+</body>
+</html>
