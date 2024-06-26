@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved-rock-paper-scissors using DOM</title>
+    <link rel="stylesheet" type="text/css" href="styles/10-rock-paper-scissors.css">
+  </head>
+  <body>
+    <p class="Title">Rock paper scissors </p>
+    <button onclick="
+      randN();
+      playGame('Rock');
+      "class="move-button">
+      <img src="images/rock-emoji.png" alt="rock" class="move-icon">
+    </button>
+    <button onclick="
+        randN();
+        playGame('Paper');
+      " class="move-button">
+      <img src="images/paper-emoji.png" alt="rock" class="move-icon">
+    </button>    
+    <button onclick="
+        randN();
+        playGame('Scissors');
+      "class="move-button">
+      <img src="images/scissors-emoji.png" alt="rock" class="move-icon">
+    </button>
+    <p class="js-result result"></p>
+    <p class="js-moves"></p>
+    <p class="Js_score score"></p>
+    <button onclick="
+      score.wins = 0;
+      score.Losses = 0;
+      score.Ties = 0;
+      localStorage.removeItem('score');
+      updateScoreElement();
+    "class="reset-score-button">Reset score</button>
+    <script src="scripts/10_rock-paper-scissors.js"></script>
+  </body>
+</html>
